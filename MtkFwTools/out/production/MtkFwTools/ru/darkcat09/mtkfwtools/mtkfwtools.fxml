@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.darkcat09.mtkfwtools.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <GridPane fx:id="headingPane" hgap="8.0" prefHeight="30.0" prefWidth="364.0" vgap="8.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.33" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.33" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.33" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label accessibleText="AppHeading" text="MtkFwTools">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ToggleButton accessibleText="RusLang" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changeLang" text="Russian Language" GridPane.columnIndex="1" />
+            <Button accessibleText="Quit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exitFromApp" prefHeight="25.0" prefWidth="119.0" text="Quit" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="buttonsPane" hgap="8.0" vgap="8.0" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button accessibleText="Porting" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openToolsWindow" text="Firmware Porting" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" />
+            <Button accessibleText="Patching" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openToolsWindow" text="Firmware Patching" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+            <Button accessibleText="InstallRootEtc" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openToolsWindow" text="Install Root, GApps, etc." textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+            <Button accessibleText="LogcatReader" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openToolsWindow" text="Logcat Reader" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button accessibleText="AdbTools" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#openToolsWindow" text="ADB Tools" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button accessibleText="ExtractMftFiles" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#extractFiles" text="Extract Needed Files" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </GridPane>
+      <ProgressBar fx:id="progressBar1" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
