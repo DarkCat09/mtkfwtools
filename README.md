@@ -1,2 +1,18 @@
-# MtkFwTools
-MediaTek Firmware Tools
+# MTK Firmware Tools Project
+## MFT Scripts
+MediaTek Firmware Tools proposes its simple scripting language.
+Scripts can be use for porting firmwares (in a main program of this project - [MtkFwTools](#mtkfwtools)),
+or to [automate routine file operations](#mft-runtime).
+
+## MtkFwTools
+MediaTek Firmware Tools is a powerful toolbox with a big functional:
+ - Automated firmware porting using MFT-scripts
+ - Automated firmware "bugfix"
+ - Installing Root, GApps, etc. on your device
+ - Reading LogCat
+ - Other ADB-tools
+ - Russian language (sorry for my bad English)
+
+## MFT Runtime
+A standalone JAR for executing MtkFwTools-scripts without any firmware operations (like unpacking `boot.img`).
+You can use it to avoid manual routine file operations.
