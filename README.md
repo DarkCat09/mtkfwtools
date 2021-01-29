@@ -1,8 +1,11 @@
 # MTK Firmware Tools Project
 ## MFT Scripts
 MediaTek Firmware Tools proposes its simple scripting language.
-Scripts can be use for porting firmwares (in a main program of this project - [MtkFwTools](#mtkfwtools)),
+
+Scripts can be use for porting firmwares (in a main program of this project - [MtkFwTools](#mtkfwtools)),<br />
 or to [automate routine file operations](#mft-runtime).
+
+Read the wiki for how to create your own MFT-script.
 
 ## MtkFwTools
 MediaTek Firmware Tools is a powerful toolbox with a big functional:
