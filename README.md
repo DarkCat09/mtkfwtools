@@ -15,6 +15,8 @@ MediaTek Firmware Tools is a powerful toolbox with a big functional:
  - Reading LogCat
  - Other ADB-tools
  - Russian language (sorry for my bad English)
+ 
+ MFT is written in Java!
 
 ## MFT Runtime
 A standalone JAR for executing MtkFwTools-scripts without any firmware operations (like unpacking `boot.img`).
