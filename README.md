@@ -23,4 +23,4 @@ A standalone JAR for executing MtkFwTools-scripts without any firmware operation
 You can use it to avoid manual routine file operations.
 
 ## Link for me
-http://regexr.com/5logq
+https://regexr.com/5m23o
