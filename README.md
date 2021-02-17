@@ -23,4 +23,6 @@ A standalone JAR for executing MtkFwTools-scripts without any firmware operation
 You can use it to avoid manual routine file operations.
 
 ## Link for me
-https://regexr.com/5m23o
+Regular Expressions
+Camera in init.rc: https://regexr.com/5mldo
+Bootclasspath in init.rc: https://regexr.com/5m23o
