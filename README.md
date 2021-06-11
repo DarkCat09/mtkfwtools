@@ -13,6 +13,7 @@ MediaTek Firmware Tools is a powerful toolbox for ROM-developers.
 4. Port firmware using one of this methods:  
    - Execute selected MFT script, or
    - Copy 3 files and apply a lot of patches/fixes ([three files method by Akella_MC on 4PDA](https://4pda.to/forum/index.php?s=&showtopic=562976&view=findpost&p=58384664));
+   - Note that only the MFT-script-method is available for crossporting!
 5. Pack boot.img;
 6. Pack firmware;
 7. Sign firmware using `testsign.jar`.
