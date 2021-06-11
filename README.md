@@ -18,15 +18,38 @@ MediaTek Firmware Tools is a powerful toolbox for ROM-developers.
 7. Sign firmware using `testsign.jar`.
 
 ### Patching firmware
-Automatically creates update.zip fixing a chosen problem.
+Automatically creates update.zip for specified firmware fixing a chosen problem.
 
 ### ADB Tools
 One more GUI for ADB. Functional:
-...
+ - Perform commands with multiple devices, shown in list;
+ - Run shell commands;
+ - Install/Uninstall applications (batch multi-package mode is available);
+ - A handy tool for reading logcat. Find or filter logs, and save it!
+ - Reboot device, reconnect, restart ADB server;
+ - FileFly: work with files "on the fly"!  
+Push and pull files; Drag&Drop, batch mode is available.  
+You can also undo adding/deleting/editing files.
+
+### ApkTool
+And one more GUI for ApkTool...
+ - Decompiling, compiling APK;
+ - A tool for editing resources:
+   - Quick action bar with auto-detecting application type:  
+   e.g. `Launcher*.apk` -> SystemLauncher -> Actions "Remove Google search bar", "Change app list color"...
+   - Built-in color picker;
+   - Translate services (Google, Yandex, Bing);
+   - Preview of layout (was not planned, so don't expect this feature in the release);
+   - Editing pictures;
+ - Finding smali code.
+
+### Language
+Supported languages:  
+Russian (Русский!), English, Ukrainian (Український).
 
 ## MFT Runtime
 A standalone file for executing MFT scripts in console.  
-You can use it to avoid some routine manual operations with files.
+Use it to avoid some routine manual operations with files.
 
 ## RegExp
 Camera in init.rc: https://regexr.com/5mldo  
