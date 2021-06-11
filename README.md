@@ -1,10 +1,11 @@
 # MTK Firmware Tools Project
 ## MFT Scripts
 MediaTek Firmware Tools has a simple scripting language used for porting firmwares.  
-You can read documentation on the wiki [about MtkFwTools scripts](https://github.com/DarkCat09/MtkFwTools/wiki/MFT-scripting).
+You can read [MtkFwTools scripting documentation](https://github.com/DarkCat09/MtkFwTools/wiki/MFT-scripting) on the wiki.
 
 ## MtkFwTools
 MediaTek Firmware Tools is a powerful toolbox for ROM-developers.  
+> Firmwares are packed using 7-Zip.
 
 ### Porting firmware
 1. Unpack a stock and a port firmware;
@@ -43,6 +44,21 @@ And one more GUI for ApkTool...
    - Preview of layout (was not planned, so don't expect this feature in the release);
    - Editing pictures;
  - Finding smali code.
+
+### Firmware Lab
+Build your firmware!  
+This feature is for ROM modification developers.  
+You can add and remove applications, edit bootanimations and sounds, include installation scripts like GApps/MicroG or SuperSU/Magisk, check update-script...
+
+FwLab has one more interesting feature: you can add some variations of one component  
+(for example: insert into firmware GApps and MicroG) and write a configuration file `firmware.lab`.  
+Then, users can open a ZIP-archive with your firmware in MtkFwTools FirmwareLab, choose components (in the example above, they can choose which of services to use: GApps or MicroG) and pack the firmware by pressing a button "Build".
+[FwLab Config documentation](https://github.com/DarkCat09/mtkfwtools/wiki/FwLab-Config) on the wiki.
+
+How FwLab builds firmware:
+ - Removes extra variations of components, keeping on only the variation selected by user;
+ - Packs firmware to ZIP;
+ - Signs it using `testsign.jar`.
 
 ### Language
 Supported languages:  
