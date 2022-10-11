@@ -1,0 +1,92 @@
+# MFT-Script
+# Porting firmware from MT6572 to MT6572
+# by DarkCat09
+
+rf fw/bin/6620_launcher
+rf fw/bin/ccci_fsd
+rf fw/bin/ccci_mdinit
+rf fw/bin/geomagneticd
+rf fw/bin/gsm0710muxd
+rf fw/bin/gsm0710muxdmd2
+rf fw/bin/msensord
+rf fw/bin/mtk_agpsd
+rf fw/bin/sdcard
+rf fw/bin/sensorservice
+rf fw/bin/vold
+rf fw/bin/mtkbt
+rf fw/bin/wlan_loader
+rf fw/bin/wmt_loader
+rf fw/bin/wpa_cli
+rf fw/bin/wpa_supplicant
+
+rf fw/etc/firmware/modem_1_wg_n.img
+rf fw/etc/firmware/WIFI_RAM_CODE
+rf fw/etc/firmware/WIFI_RAM_CODE_E6
+rf fw/etc/firmware/WIFI_RAM_CODE_MT6582
+rf fw/etc/firmware/WIFI_RAM_CODE_MT6628
+rf fw/etc/firmware/WMT_SOC.cfg
+rf fw/etc/permissions/android.hardware.*.xml
+rf fw/etc/wifi/p2p_supplicant_overlay.conf
+rf fw/etc/wifi/wpa_supplicant.conf
+rf fw/etc/wifi/wpa_supplicant_overlay.conf
+rf fw/etc/bluetooth/*
+
+rf fw/etc/agps_profiles_conf.xml
+rf fw/etc/apns-conf.xml
+rf fw/etc/audio_effects.conf
+rf fw/etc/audio_policy.conf
+rf fw/etc/custom.conf
+
+rd fw/lib/hw
+rd fw/lib/soundfx
+rd fw/lib/ssl
+
+rf fw/lib/libaudio.primary.default.so
+rf fw/lib/libcam.paramsmgr.so
+rf fw/lib/libcameracustom.so
+rf fw/lib/libem_sensor_jni.so
+rf fw/lib/libfacelock_jni.so
+rf fw/lib/libgsensor_jni.so
+rf fw/lib/libsensorservice.so
+rf fw/lib/libspeexresampler.so
+rf fw/lib/libspeexwrapper.so
+rf fw/lib/libMali.so
+rf fw/lib/libbluetooth_jni.so
+rf fw/lib/libbluetooth_mtk.so
+rf fw/lib/libbluetooth_relayer.so
+rf fw/lib/libbluetoothdrv.so
+rf fw/lib/libbluetoothem_mtk.so
+rf fw/lib/libbrctrler.so
+rf fw/lib/libbtcust.so
+rf fw/lib/libbtcusttable.so
+rf fw/lib/libbtem.so
+rf fw/lib/libbt-hci.so
+rf fw/lib/libbtpcm.so
+rf fw/lib/libbtsession.so
+rf fw/lib/libbtsniff.so
+rf fw/lib/libbt-utils.so
+rf fw/lib/libem_bt_jni.so
+rf fw/lib/libem_gpio_jni.so
+rf fw/lib/libem_modem_jni.so
+rf fw/lib/libem_sensor_jni.so
+rf fw/lib/mtk_stp_bt_soc.ko
+rf fw/lib/libem_wifi_jni.so
+rf fw/lib/libpalwlan_mtk.so
+rf fw/lib/libwifitest.so
+rf fw/lib/libwpa_client.so
+rf fw/lib/libdpframework.so
+rf fw/lib/libinput.so
+rf fw/lib/libinputservice.so
+
+rd fw/usr/keychars
+rd fw/usr/keylayout
+
+rf kn/kernel/kernel
+rf kn/ramdisk/fstab
+rf kn/ramdisk/fstab.fat.nand
+rf kn/ramdisk/fstab.nand
+rf kn/ramdisk/init.project.rc
+rf kn/ramdisk/init.ssd.rc
+rf kn/ramdisk/init.usb.rc
+
+rt kn/ramdisk/init.rc #Camera\n[\w\W]+?#

@@ -1,0 +1,3 @@
+# MFT-script
+# Porting firmware from MT6580 to MT6572
+# by DarkCat09
